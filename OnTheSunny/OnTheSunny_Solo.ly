@@ -37,23 +37,23 @@ d4---.^\markup { \fontsize #4 {\musicglyph #"scripts.coda" }} b8-- g-- r fis-- e
 d2 ~d8 r r4 \bar"||"
  \cadenzaOn 
 \stopStaff 
-\once \override TextScript #'word-space = #1.5
+% \once \override TextScript #'word-space = #1.5
 \once \override TextScript #'X-offset = #0
-\once \override TextScript #'Y-offset = #1
+\once \override TextScript #'Y-offset = #-0.5
 | s1*1^\markup { \center-column { "Improv." } }  
 | s1*1 \bar""
 | s1*1 \bar""
-% | s1*1 \bar""
-% | s1*1 \bar""
-% | s1*1 \bar""
+| s1*1 \bar""
+| s1*1 \bar""
+| s1*1 \bar""
 % | s1*1 \bar""
 % | s1*1 \bar""
 \startStaff 
 \cadenzaOff
-\break
-d'8^\markup{Unisono} (b fis e a b cis e) 
+\bar"|"
+d'8^\markup { \fontsize #4 {\musicglyph #"scripts.coda"} } (b^\markup{Unisono} fis e a b cis e) 
 d8 (b16 a fis8--) cis-^ r2 
-% \bar"|."
+\bar"|."
 % \stopStaff 
 % s1*4
 }

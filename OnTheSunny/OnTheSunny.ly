@@ -3,5 +3,7 @@ globalOnTheSunny= {
 \key d \major
 }
 
+\include "../OnTheSunny/rhythmark.ly"
+
 \include "../OnTheSunny/OnTheSunny_Solo.ly"
 \include "../OnTheSunny/OnTheSunny_Chords.ly"
