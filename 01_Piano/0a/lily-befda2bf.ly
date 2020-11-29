@@ -94,11 +94,16 @@
     
     \score{
         <<
-%             \new Voice { \relative c{ \globalSun\HereComesTheSunSolo }}
-            \new  GrandStaff { <<
-            \new Staff {\relative c''{\globalSun\HereComesTheSunPianoSolo} }
-            \new Staff \relative c'{\globalSunBass\HereComesTheSunBass}
+            \new Voice  { \relative c''{ \globalSun\HereComesTheSunSolo }}
+            \new GrandStaff { <<
+            \new Staff {\relative c'''{\globalSun\HereComesTheSunPianoSolo} }
+            \new ChordNames {\globalSun \germanChords \HereComesTheSunChords}
+            \new Staff {\relative c''{\globalSunBass\HereComesTheSunBass}}
             >>}
+%             \new  GrandStaff { <<
+%             \new Staff \transpose g bes{\relative c''{\globalSun\HereComesTheSunPianoSolo} }
+%             \new Staff \transpose g bes{\relative c'{\globalSunBass\HereComesTheSunBass}}
+%             >>}
         >>
         \layout {
         paper-width =#250

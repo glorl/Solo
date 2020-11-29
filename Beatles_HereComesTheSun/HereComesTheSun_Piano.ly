@@ -147,20 +147,19 @@ a8 d, g a g fis e d |
 r4 b4 a8 b4 e,8 |
 <g d g,>4 <g d g,>4 <g d g,>4 <g d g,>4| 
 
+\repeat volta 6{
 \time 7/8 fis4 r d8 [fis a] |
 \time 7/8 <a d,>4 <a d,>4 d,8 [fis a]|
-\repeat volta 6{
-\time 11/8 b8 [d, fis] a [c, fis] g [c, e] c [e]  |
-\time 11/8 b4. <a f>4. <g e>4. c,8 [e]|
+
+\time 11/8 bes8 [d, f] a [c, f!] g [c, e] c [e]  |
+\time 11/8 bes4. <a f>4. <g e>4. c,8 [e]|
 
 \time 4/4 <g d b>4 <g d b>~<g d b>8 <g d b>4.|
 \time 4/4 <g d g,>4 <g d g,>4 <g d g,>4 <g d g,>4|
+}
 
-\time 7/8 <fis d a>4 <fis d a> d8 [fis a] |
-\time 7/8 <a d,>4 <a d,>4 d,8 [fis a]|}
-
-\time 4/4 <fis d a>2~<fis d a>8 e fis g~| 
-\time 4/4 <fis d>4 <fis d>4 <fis d>4 <fis d>4 |
+<fis d a>2~<fis d a>8 e fis g~| 
+<fis d>4 <fis d>4 <fis d>4 <fis d>4 |
 
 <g e d a>2~<g e d a>8 fis g a~|
 <fis d>4 <fis d>4 <fis d>4 <fis d>4 |
@@ -252,8 +251,8 @@ a8 d, g a g fis e d |
 bes8 d f f, a c es, g |
 <bes'>4. <f>8~<f>4 <es>4~|
 
-bes8 c, es <d b>8~<d bes>2| 
-<es>8 r r es8~es2|\bar"|."
+bes8 c, es <f d>8~<f d>2| 
+<es>8 r r bes8~bes2|\bar"|."
 
 }
 
