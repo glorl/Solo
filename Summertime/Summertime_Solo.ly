@@ -1,177 +1,66 @@
-% \addQuote "pianofine" {\relative c'' {
-% b,4 (e8 d e fis d b) 
-% fis4 r d'2 
-% c2 a 
-% b4 cis8 (b cis d ais4) 
-% b4 (gis a ais 
-% b2.\fermata r4}}
-
-\parallelMusic #'(SummertimeSolo SummertimePiano) {
-\partial 4 \tuplet 3/2{ais8 (b d)} |
-r4 |
-
-f4 f8 (d f) d4 f8-- |
+SummertimeSolo=\new Voice \relative c''{
+\set Timing.beamExceptions = #'()
+\set Timing.baseMoment = #(ly:make-moment 1/4)
+\set Timing.beatStructure = #'(1 1 1 1)
+    \partial 4 r4 % |
 r1 |
-
-fis!8 (d a ais b4 \tuplet 3/2{d8 dis e}|
 r1 |
-
-fis8)\noBeam f,8 e4 d cis |
 r1 |
-
-b4 a g8 fis~fis4 |
-r2 \acciaccatura g''8 fis4 (d) \bar"||" |
-
-fis''1 ~ |
-s1 |
-
+r2 \acciaccatura g'8 fis4 (d) \bar"||" |
+fis1 ~ |
 fis8 r8 e (d e fis d4)  |
-s1 |
-
 b2 (fis2~ |
-s1 |
-
 fis4) r fis' (d)  |
-s1 |
-
 e4. e8 ~e2  |
-s1 |
-
 r4 d8 \mp \<(b d b d4)\!  |
-s1 |
-
-cis1~ |
-s1 |
-
+cis1~|
 cis4. cis'8 (d b fis d)  |
-s1 |
-
 fis8-- fis4-- fis8 ~fis2 |
-s1 |
-
 r4 e8 (d e fis d4) |
-s1 |
-
 b2 (fis~|
-s1 |
-
 fis2) r4 fis4-- |
-s1 |
-
 a4 fis8 (a) b4 (d) |
-s1 |
-
 fis8 (e4. d2) |
-s1 |
-
 \acciaccatura d8 b1~|
-s1 |
-
 b1 ^\markup { \fontsize #4 {\musicglyph #"scripts.coda" }}~|
-s1 |
-
 b4 r \tuplet 3/2{fis'4-- fis-- d-- }\bar"||"|
-s1 |
-
 fis4 fis2.|
-s1 |
-
 r8 fis8 (d d e fis d4) |
-s1 |
-
 b2 (fis~|
-s1 |
-
 fis4) r \acciaccatura eis'8 fis4 (d4) |
-s1 |
-
 e8-- e4 e8~e2~|
-s1 |
-
 e8 r8 d(b d b d4) |
-s1 |
-
 cis1 ~|
-s1 |
-
 cis2 r8 fis8-- fis (d) |
-s1 |
-
 fis8 fis4. ~fis2|
-s1 |
-
 r4 e8 (d e fis d4) |
-s1 |
-
 b2 (fis)~|
-s1 |
-
 fis2 ~fis8 r fis4-- |
-s1 |
-
 a4 fis8 (a) b4 (d) |
-s1 |
-
 fis8-- e4. d2|
-s1 |
-
 \acciaccatura d8 b1~ |
-s1 |
-
 b8 r^\markup{break} r4 r2\bar"||" |
-s1 |
-
 \cadenzaOn 
 \stopStaff 
 % \once \override TextScript #'word-space = #1.5
 \once \override TextScript #'X-offset = #0
 \once \override TextScript #'Y-offset = #-0.5 | 
 s1*1^\markup { \center-column { "Improv." } }  | 
-s1 |
 s1*1 \bar""|
 s1 |
-
-s1*1 \bar""|
 s1 |
-
-s1*1 \bar"" |
-s1 |
-
-% % | s1*1 \bar""
-% % | s1*1 \bar""
 \startStaff 
 \cadenzaOff
 \bar"|"
-b1^\markup { \fontsize #4 {\musicglyph #"scripts.coda"} } ~|
-b,4 (e8 d e fis d b) |
-
+b1^\markup { \fontsize #4 {\musicglyph #"scripts.coda"} }\> ~|
 b1~|
-fis4 r d'2  |
-
 b1~|
-c2 a  |
-
-b1~|
-b4 cis8 (b cis d ais4) |
-
+b1 \pp |
 r1|
-b'4 (gis a ais |
-
 r1|
-b2.\fermata r4 |
 \bar"|."
 }
-% {
-% \new CueVoice {\stemDown  
-% 
-% 
-%  \stemUp
-%  
-% 
-% }
-% >>
 
-% }
 
 SummertimeChorus=\relative c''{
 \set Timing.beamExceptions = #'()
@@ -212,32 +101,3 @@ b1
 b4_\markup{Thema D.C. al \musicglyph #"scripts.coda" - \musicglyph #"scripts.coda"} r4 \grace g'8 (fis4) (d) \bar"||"
 }
 
-
-
-
-\parallelMusic #'(SummertimePianoAcc voiceB voiceC) {
-  % Bar 1
-  r8 g'16 c'' e'' g' c'' e'' r8 g'16 c'' e'' g' c'' e'' |
-  r16 e'8.~   e'4            r16 e'8.~   e'4            |
-  c'2                        c'2                        |
-
-  % Bar 2
-  r8 a'16 d'' f'' a' d'' f'' r8 a'16 d'' f'' a' d'' f'' |
-  r16 d'8.~   d'4            r16 d'8.~   d'4            |
-  c'2                        c'2                        |
-
-}
-
-
-% SummertimePianoAcc=\relative c''{
-% s4
-% s1
-% s1
-% s1
-% s1
-% s1
-% s1
-% s1
-% s1
-% g4 
-% }
