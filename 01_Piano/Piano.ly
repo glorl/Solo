@@ -14,6 +14,14 @@
         \set Staff.midiInstrument = #"Accordion"
         << \transpose g c { \relative c''{\globalSunBass\HereComesTheSunBass}} >>
     }
+    \new Staff{\set Staff.instrumentName = "Vocal 1" 
+        \set Staff.midiInstrument = #"Accordion"
+        << \transpose g c { \relative c'''{\globalSun\HereComesTheSunZPianoSolo}} >>
+    }
+    \new Staff{\set Staff.instrumentName = "Vocal 2" 
+        \set Staff.midiInstrument = #"Accordion"
+        << \transpose g c { \relative c''{\globalSunBass\HereComesTheSunZBass}} >>
+    }
     >>
     \layout {
     \context {
